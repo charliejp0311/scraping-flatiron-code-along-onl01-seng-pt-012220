@@ -28,7 +28,7 @@ class Scraper
   end
 
   def get_courses
-    Nokogiri::XML::Module
+    @docs.css(".posts-holder")
   end
 
 end
