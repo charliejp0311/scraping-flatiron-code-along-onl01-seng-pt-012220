@@ -32,7 +32,8 @@ class Scraper
   end
 
   def make_courses
-    puts get_courses[h2]
+    all_data = get_courses
+    puts all_data[h2]
   end
 
 end
