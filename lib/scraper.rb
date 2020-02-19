@@ -37,6 +37,7 @@ class Scraper
     all_data.css("h2").each do
       courses_array << all_data.css("h2").text
     end
+    courses_array
   end
 
 
