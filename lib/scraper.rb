@@ -28,8 +28,7 @@ class Scraper
   end
 
   def get_courses
-    @doc.css(".posts-holder").h2
-    binding.pry
+    @doc.css(".posts-holder").text
   end
 
 end
