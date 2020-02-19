@@ -28,7 +28,7 @@ class Scraper
   end
 
   def get_courses
-    Nokogiri::XML::h2
+    Nokogiri::XML::Module
   end
 
 end
