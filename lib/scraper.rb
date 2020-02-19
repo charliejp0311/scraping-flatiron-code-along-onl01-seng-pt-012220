@@ -34,7 +34,10 @@ class Scraper
   def make_courses
     all_data = get_courses
     all_data.css("article").each do
-       Course.new(all_data.css("h2").text, all_data.css("em").text, all_data.css("p").text)
+       mk_course = Course.new
+       mk_course.title = all_data.css("h2").text
+       mk_course.schedule = all_data.css("em").text
+       mk_course.description = all_data.css("p").text)
     end
   end
 
