@@ -31,7 +31,7 @@ class Scraper
     @doc.css(".posts-holder")
   end
 
-  def make_courses(get_courses)
+  def make_courses
     puts get_courses
   end
 
