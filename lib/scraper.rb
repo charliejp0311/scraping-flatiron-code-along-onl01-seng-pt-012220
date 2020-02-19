@@ -28,7 +28,7 @@ class Scraper
   end
 
   def get_courses
-    puts @doc
+    Nokogiri::XML::h2
   end
 
 end
