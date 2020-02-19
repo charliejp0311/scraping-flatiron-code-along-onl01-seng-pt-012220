@@ -37,7 +37,7 @@ class Scraper
        mk_course = Course.new
        mk_course.title = all_data.css("h2").text
        mk_course.schedule = all_data.css("em").text
-       mk_course.description = all_data.css("p").text)
+       mk_course.description = all_data.css("p").text
     end
   end
 
