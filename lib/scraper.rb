@@ -32,7 +32,7 @@ class Scraper
   end
 
   def make_courses(get_courses)
-    binding.pry
+    puts get_courses
   end
 
 end
