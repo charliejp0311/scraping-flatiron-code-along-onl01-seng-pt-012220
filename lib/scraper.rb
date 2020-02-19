@@ -32,12 +32,10 @@ class Scraper
   end
 
   def make_courses
-    courses_array = []
     all_data = get_courses
-    all_data.css("h2").each do
-      courses_array << all_data.css("h2").text
+    all_data.css("article").each do
+       Course.new(all_data.css("h2").text, all_data.css("em").text, all_data.css("p").text)
     end
-    courses_array
   end
 
 
